@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0A09CF1E86043F003BFC15 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A09CE1E86043F003BFC15 /* VideoVC.swift */; };
+		4F0A09D11E881108003BFC15 /* ColdplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A09D01E881108003BFC15 /* ColdplayCell.swift */; };
+		4F0A09D31E896CEB003BFC15 /* YouRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A09D21E896CEB003BFC15 /* YouRock.swift */; };
 		4F8F1CFD1E85F07700D01B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F1CFC1E85F07700D01B43 /* AppDelegate.swift */; };
-		4F8F1CFF1E85F07700D01B43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F1CFE1E85F07700D01B43 /* ViewController.swift */; };
+		4F8F1CFF1E85F07700D01B43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F1CFE1E85F07700D01B43 /* MainVC.swift */; };
 		4F8F1D021E85F07700D01B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F1D001E85F07700D01B43 /* Main.storyboard */; };
 		4F8F1D041E85F07700D01B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F1D031E85F07700D01B43 /* Assets.xcassets */; };
 		4F8F1D071E85F07700D01B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F1D051E85F07700D01B43 /* LaunchScreen.storyboard */; };
+		4F8F1D121E85FF8200D01B43 /* COLDPLAY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F1D111E85FF8200D01B43 /* COLDPLAY.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0A09CE1E86043F003BFC15 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		4F0A09D01E881108003BFC15 /* ColdplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColdplayCell.swift; sourceTree = "<group>"; };
+		4F0A09D21E896CEB003BFC15 /* YouRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouRock.swift; sourceTree = "<group>"; };
 		4F8F1CF91E85F07700D01B43 /* YouRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8F1CFC1E85F07700D01B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F8F1CFE1E85F07700D01B43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F8F1CFE1E85F07700D01B43 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4F8F1D011E85F07700D01B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F8F1D031E85F07700D01B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F8F1D061E85F07700D01B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F8F1D081E85F07700D01B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8F1D111E85FF8200D01B43 /* COLDPLAY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = COLDPLAY.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		4F8F1CFB1E85F07700D01B43 /* YouRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F8F1D131E85FF8F00D01B43 /* Files */,
+				4F8F1D101E85F14500D01B43 /* Model */,
+				4F8F1D0F1E85F13500D01B43 /* View */,
+				4F8F1D0E1E85F12600D01B43 /* Controller */,
 				4F8F1CFC1E85F07700D01B43 /* AppDelegate.swift */,
-				4F8F1CFE1E85F07700D01B43 /* ViewController.swift */,
 				4F8F1D001E85F07700D01B43 /* Main.storyboard */,
-				4F8F1D031E85F07700D01B43 /* Assets.xcassets */,
 				4F8F1D051E85F07700D01B43 /* LaunchScreen.storyboard */,
+				4F8F1D031E85F07700D01B43 /* Assets.xcassets */,
 				4F8F1D081E85F07700D01B43 /* Info.plist */,
 			);
 			path = YouRockApp;
+			sourceTree = "<group>";
+		};
+		4F8F1D0E1E85F12600D01B43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F1CFE1E85F07700D01B43 /* MainVC.swift */,
+				4F0A09CE1E86043F003BFC15 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4F8F1D0F1E85F13500D01B43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F0A09D01E881108003BFC15 /* ColdplayCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F8F1D101E85F14500D01B43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F0A09D21E896CEB003BFC15 /* YouRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F8F1D131E85FF8F00D01B43 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F1D111E85FF8200D01B43 /* COLDPLAY.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8F1D121E85FF8200D01B43 /* COLDPLAY.ttf in Resources */,
 				4F8F1D071E85F07700D01B43 /* LaunchScreen.storyboard in Resources */,
 				4F8F1D041E85F07700D01B43 /* Assets.xcassets in Resources */,
 				4F8F1D021E85F07700D01B43 /* Main.storyboard in Resources */,
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8F1CFF1E85F07700D01B43 /* ViewController.swift in Sources */,
+				4F0A09D31E896CEB003BFC15 /* YouRock.swift in Sources */,
+				4F0A09CF1E86043F003BFC15 /* VideoVC.swift in Sources */,
+				4F0A09D11E881108003BFC15 /* ColdplayCell.swift in Sources */,
+				4F8F1CFF1E85F07700D01B43 /* MainVC.swift in Sources */,
 				4F8F1CFD1E85F07700D01B43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +350,7 @@
 				4F8F1D0D1E85F07700D01B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
