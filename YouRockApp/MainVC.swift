@@ -24,9 +24,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let y3 = YouRock(imageURL: "http://www.josepvinaixa.com/blog/wp-content/uploads/2014/11/Coldplay-All-Your-Friends-2014-Promotional.png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/E5a51OonZDE\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "All Your Friends")
         
+        let y4 = YouRock(imageURL: "https://i.ytimg.com/vi/p7gF_am03qU/maxresdefault.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/J6ZWlDks0nQ\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Paradise")
+        
+        let y5 = YouRock(imageURL: "https://i.ytimg.com/vi/yoXLp4x8Sys/maxresdefault.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0-XXX3dnlVc\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Ghost Stories")
+        
         rocks.append(y1)
         rocks.append(y2)
         rocks.append(y3)
+        rocks.append(y4)
+        rocks.append(y5)
         
         tableView.delegate = self
         tableView.dataSource = self
