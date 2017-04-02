@@ -9,17 +9,29 @@
 import UIKit
 
 class VideoVC: UIViewController {
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    
+    private var _youRock: YouRock!
+    
+    var youRock: YouRock {
+        get {
+            return _youRock
+        } set {
+            _youRock = newValue
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleLbl.text = youRock.videoTitle
+        webView.loadHTMLString(youRock.videoURL, baseURL: nil)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     /*
@@ -31,5 +43,7 @@ class VideoVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
 
 }

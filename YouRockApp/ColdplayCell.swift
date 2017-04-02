@@ -22,7 +22,21 @@ class ColdplayCell: UITableViewCell {
     
     func updateUI(youRock: YouRock) {
         videoTitle.text = youRock.videoTitle
-        //TODO: set image from url
+        
+        let url = URL(string: youRock.imageURL)!
+        
+        DispatchQueue.main.async {
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {
+                    self.videoPreviewImage.image =
+                    UIImage(data: data)
+                }
+            } catch {
+                error as NSError
+                print("PAUL:\(error)")
+            }
+        }
         
         
     }

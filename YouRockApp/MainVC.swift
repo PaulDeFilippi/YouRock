@@ -51,15 +51,30 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
         } else {
             return UITableViewCell()
-            
+ 
         }
         
-        return UITableViewCell()
-    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rocks.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let youRock = rocks[indexPath.row]
+        
+        performSegue(withIdentifier: "VideoVC", sender: youRock)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? VideoVC {
+            
+            if let rock = sender as? YouRock {
+                destination.youRock = rock
+            }
+            
+        }
     }
 
 }
